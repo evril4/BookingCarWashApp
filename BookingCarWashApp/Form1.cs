@@ -96,11 +96,47 @@ namespace BookingCarWashApp
 
             // Jika ingin memilih item default
             cmbLayananCuci.SelectedIndex = 0; // Memilih item pertama secara default
+
         }
 
         private void cmbLayananCuci_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void cmbJenisKendaraan_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblTanggalbooking_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Membersihkan item lama jika ada
+            listView1.Items.Clear();
+
+            // Tambahkan data riwayat booking
+            ListViewItem booking1 = new ListViewItem("Andi");
+            booking1.SubItems.Add("22 Oktober 2024");
+            booking1.SubItems.Add("Sukses");
+            booking1.ForeColor = Color.Green;  // Menggunakan warna hijau untuk sukses
+            listView1.Items.Add(booking1);
+
+            ListViewItem booking2 = new ListViewItem("Budi");
+            booking2.SubItems.Add("23 Oktober 2024");
+            booking2.SubItems.Add("Sedang Diproses");
+            booking2.ForeColor = Color.Orange; // Menggunakan warna oranye untuk proses
+            listView1.Items.Add(booking2);
+
+            ListViewItem booking3 = new ListViewItem("Citra");
+            booking3.SubItems.Add("21 Oktober 2024");
+            booking3.SubItems.Add("Dibatalkan");
+            booking3.ForeColor = Color.Red; // Menggunakan warna merah untuk dibatalkan
+            listView1.Items.Add(booking3);
         }
     }
 }

@@ -74,6 +74,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -87,6 +88,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\64544b1bda291213e8603a5efaf015e6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c56d129633347ad70c0fe8308485a157.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-car-wash-auto-detailing-logo-vector.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
